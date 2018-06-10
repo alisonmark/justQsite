@@ -1,0 +1,36 @@
+/* ==========================================================================
+   01. Responsive Options
+   ========================================================================== */
+   
+html{
+ 	padding: 0;
+}  
+ 
+/* Responsive Boxed Version  */
+body{ padding: 30px 0px;  }
+
+
+.sticky-header-wrapper .outter-wrapper,
+.outter-wrapper-parent, 
+.boxed-page .sticky-header-wrapper,
+.boxed-page footer{
+	position: relative;
+	margin: 0 auto;
+	max-width: 1180px;
+}
+
+.boxed-page .sticky-header-wrapper .search-area{
+	padding-top: 0;
+}
+
+
+
+
+
+
+/* Responsive Full Width Version 
+body{ padding: 0em; }
+.outter-wrapper{ max-width: 100%; width: 100%;}
+.wrapper { max-width: 1140px; width: auto;}
+
+*/

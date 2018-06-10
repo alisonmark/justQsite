@@ -1,0 +1,106 @@
+ChangeLog
+========
+Version: 1.1.3
+
+    i) Slider bug fixed.
+    ii) Google fonts issue fixed.
+    iii) Minor CSS bug fixed.
+
+Version: 1.1.2
+	
+	i) Blog layout minor bug fixed.
+
+Version: 1.1.1
+
+    i) Woocommerce CSS Bug fixed.
+
+Version 1.1.0
+    i) Added Custom logo.
+    ii) Social icons bug fixed.
+    v) Post Slider Bug fixed.
+    vi) Custom skins and colors major bug fixed.
+    vii) All blog layout bug fixed.
+    viii) Minimize customizer.
+
+Version: 1.0.9
+
+    i) Social icons bug fixed on mobile screens.
+    ii) Minor bug fixes.
+
+Version 1.0.8
+
+    i) Sub Menu Hover Issue Fixed
+    ii) Minor Bug Fixes
+
+Version 1.0.7
+
+    i) Social Icons Link Issue Resoved
+    ii) Minor Bug Fixes
+
+Version 1.0.6
+
+    i) File structure switched to new framework.
+    ii) Added 4 new social icon styles.
+    iii) Added new blog layout called maximum.
+    iv) Added typography option for site title, description, page/post content.
+    v) Added new skins called red.
+
+Version 1.0.4	
+
+	i) Fixed WC3 Issues
+
+Version 1.0.3
+
+	i) Fixed Display of Search Ordering Control, in Firefox Browsers.
+
+VERSION 1.0.1
+
+	i) Added links to Pro Version
+	ii) Corrected Default BG color
+
+Version 1.0
+
+	i) Fixed WooCommerce star ratings issue. 
+
+Version 0.96
+
+	i) Fixed Issues with Footer 4 Widget area not appearing
+	ii) Deleted incorrect languages file.
+
+Version 0.95
+
+	i) Remove Duplicate Fonts
+
+Version 0.94
+
+	i) Removed HTML5 Comment List Support
+	ii) Other Minor Fixes.
+
+Version 0.93
+
+	i) used new core function for pagination
+	ii) escaping issues
+	iii) prefixing issues
+	iv) other minor fixes.
+
+Version 0.92 (pre release)
+
+	i) Custom Logo Fixed.
+	ii) I18n for Date in Recent Posts Widget
+	iii) js fixes.
+	iv) Other Minor Fixes.
+	v) Corrected Skins
+
+Version 0.91 (pre release)
+
+	i) Customizer Bug FIxes.
+	ii) Added Slider via plugin.
+	iii) Translation Fix.
+	iv) Core Custom logo
+	v) New Theme Tags added.
+	vi) Other minor fixes.
+	
+	
+Version 0.9
+
+	i) Initial Release.

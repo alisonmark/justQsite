@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #0B3B2E;
+    color: #f1f1f1;
+    margin: 10px 5%;
+    padding: 0;
+}
+
+
+/* === Style for mainpage === */
+
+#container {
+    position: relative;
+    padding-left: 300px;
+}
+
+
+/* === Style for mainpage === */
+
+#content {
+    position: relative;
+    display: inline-flex;
+    width: 70%;
+}
+
+
+/* === End Style for mainpage === */
+
+
+/* === End Style for mainpage === */
+
+
+/* === Style for left-bar === */
+
+#left-bar {
+    position: absolute;
+    left: 5%;
+    top: 0;
+    list-style-type: none;
+    width: 10%;
+}
+
+#left-bar ul li {
+    list-style-type: none;
+    padding-left: 20px;
+    background: #070719;
+    text-align: left;
+    font-weight: bold;
+    height: 40px;
+    width: 150px;
+    line-height: 40px;
+    border-bottom: 1px solid;
+    position: relative;
+}
+
+#left-bar li:hover {
+    background: #0B3B2E;
+}
+
+#sub-menu {
+    display: none;
+    position: absolute;
+    left: 170px;
+    top: 0px;
+}
+
+#sub-menu a {
+    display: block;
+    left: 150px;
+}
+
+#left-bar li:hover #sub-menu {
+    display: block;
+}
+
+
+/* === End Style for left-bar === */
+
+
+/* === Style for FormAction=== */
+
+.lbl {
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.in {
+    margin-left: 120px;
+    padding: 0px;
+    width: 300px;
+    height: 35px;
+    line-height: 35px;
+}
+
+.dv-lbl {
+    position: absolute;
+}
+
+.dv-lbl label {
+    display: block;
+}
+
+.in-text input {
+    display: block;
+}
+
+#btn {
+    width: 100px;
+    margin-top: 10px;
+}
+
+.in-btn {
+    margin-left: 120px;
+    width: 500px;
+    height: 35px;
+    line-height: 35px;
+    display: block;
+    /* color: blue; */
+}
+
+div#kkk {
+    width: 300px;
+    height: 100px;
+    background-color: rebeccapurple;
+}
+
+
+/* === End Style for FormAction=== */
+
+
+/* === Style for right-bar === */
+
+#right-bar {
+    position: absolute;
+    right: 5%;
+    top: 0;
+    background: #070719;
+    /* width: 10%; */
+    min-width: auto;
+}
+
+#right-bar ul li {
+    list-style-type: none;
+    padding-left: 20px;
+    text-align: left;
+    font-weight: bold;
+    height: 40px;
+    width: auto;
+    line-height: 40px;
+    border-bottom: 1px solid;
+    position: relative;
+}
+
+#scroll-post a {
+    display: block;
+}
+
+.widget-head {
+    background: #b3d4fc;
+    color: #0B3B2E;
+    height: 40px;
+    line-height: 40px;
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 2px solid #f1f1f1;
+}
+
+
+/* === End Style for right-bar === */

@@ -1,0 +1,129 @@
+/* Single Posts Area */
+#primary, #primary-mono {
+  background: #fff;
+  padding-top: 30px;
+}
+.single-entry-header {
+  margin-top: 15px;
+  padding-left: 0;
+  h1, .entry-meta {
+    text-align: center;
+  }
+}
+
+#primary-mono {
+  padding: 0 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  @media screen and (max-width:767px) {
+    padding-left: 10px;
+  }
+  h1.entry-title {
+    font-weight: bold;
+    color: darken(@content,5%);
+    text-shadow: 1px 1px 0 white, 2px 2px 0 fade(@accent,60%);
+    font-size: 40px;
+    margin-top: 0px;
+    padding: 10px;
+    padding-left: 0;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+  }
+  .entry-meta {
+    margin-top: 5px;
+    font-size: 13px;
+    margin-bottom: 20px;
+    color: darken(@content, 5%);
+    .posted-on,.byline {
+      background: @accent;
+      display: inline-block;
+      color: @onaccent;
+      padding: 5px;
+      text-transform: uppercase;
+      .transition(0.4s all ease);
+      a {
+        color: @onaccent;
+      }
+      i {
+        margin-right: 5px;
+      }
+      &:hover {
+        background: black;
+        a {
+          color: @onaccent;
+        }
+      }
+    }
+    .byline {
+      background: @s-accent;
+      margin-left: 15px;
+    }
+  }
+  .entry-meta, .entry-footer {
+    padding-bottom: 7px;
+    overflow: auto;
+    .byline {
+      margin-left: 1px;
+    }
+    a {
+      color: @accent;
+      text-decoration: none;
+      &:hover {
+        color: @content;
+      }
+    }
+  }
+
+  .entry-footer {
+    border-top: solid 1px darken(#fff,5%);
+    border-bottom: solid 1px darken(#fff,5%);
+    padding-top: 7px;
+    margin-top: 25px;
+    font-size: 12px;
+    .post-edit-link {
+      float: right;
+
+    }
+    .cat-links {
+      margin-right: 6px;
+    }
+  }
+
+  .entry-content {
+    color: @content;
+    line-height: 1.7em;
+    font-size: 14px;
+  }
+
+  #featured-image {
+    margin-top: 10px;
+  }
+}
+
+#primary-mono.page h1.entry-title:after {
+  display: none;
+}
+.edit-link {
+  display: inline-block;
+  float: right;
+}
+.page-header {
+  margin-top: 0px;
+  border-bottom: none;
+  h1 {
+    font-size: 18px;
+    font-weight: lighter;
+    border-bottom: solid 1px #e1e1e1;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+}
+#primary-mono .single-page .entry-header h1 {
+  font-weight: bold;
+  font-size: 40px;
+  color: @content;
+  margin-top: 15px;
+  .title-font;
+  text-shadow: 1px 1px 0 white, 2px 2px 0 fade(@accent,60%);
+  text-align: left;
+}

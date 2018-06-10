@@ -1,0 +1,1849 @@
+	/*
+	Theme Name: Belle
+	Description: A Personal Blog Theme For WordPress
+	Theme URI: http://themeforest.net/
+	Author: ThemeCanon
+	Author URI: http://themecanon.com
+	Version: 1.0
+	Tags: Light, dark, one-column, right-sidebar, left-sidebar, responsive-layout
+	License:
+	License URI:
+	*/
+	
+
+	
+
+	
+
+
+
+	
+	      
+	     
+
+
+
+
+
+
+
+
+	      
+/* ==========================================================================
+   Base Layout Settings
+   ========================================================================== */	
+	
+	body{
+		direction: rtl;
+		unicode-bidi: embed;
+	}
+	
+	.format-quote a.postTitle h1{
+		text-align: right;
+	}
+	
+	.postAuthor-inner .avatar,
+	.comment-count{
+		right: 0px;
+		left: inherit;
+	}
+	
+	.corner-date{
+		right: 0px;
+		left: inherit;
+	}
+	
+	.corner-date:before,
+	.widget .more-posts-thumbnails-list .thumbnails-list-date:before {
+	    display: none;
+	}
+	
+	.corner-date:after,
+	.widget .more-posts-thumbnails-list .thumbnails-list-date:after {
+	    content: "";
+	    padding-left: 5px;
+	    position: relative;
+	    top: -1px;
+	    font-family: "FontAwesome";
+	    font-size: .6rem;
+	}
+	  
+	.post-format-quote.is-tweet blockquote::before, .widget.belle_twitter .tweet p::before{
+		padding-left: 10px;
+		padding-right: 0;
+	}
+
+	
+	 
+	 
+	 
+
+
+/* ==========================================================================
+   Nav
+   ========================================================================== */
+
+/* PRE HEADER */
+	.sticky-header-wrapper ul.nav > li:first-child,
+	.sticky-header-wrapper ul.nav > li:first-child > a{
+		padding-right: 0;
+		margin-right: 0;
+	} 
+	
+	.sticky-header-wrapper ul.nav > li,
+	.sticky-header-wrapper ul.nav > li:last-child,
+	.sticky-header-wrapper .header-container ul.nav > li:last-child{
+		padding: 0;
+		padding-right: 1.85em;
+		margin-right: 1.85em;
+	}
+	
+	.sticky-header-wrapper .header-container ul.nav > li,
+	.sticky-header-wrapper .header-container ul.nav > li:last-child{
+		padding-right: 0;
+		margin-right: 2.25em;
+		margin-left: 0;	
+	}
+	
+	.sticky-header-wrapper .header-container ul.nav > li:last-child{
+		padding-right: 0;
+		margin-left: 0;
+	}
+	
+	.sticky-header-wrapper .right ul.nav > li:first-child,
+	.sticky-header-wrapper .header-container .left ul.nav > li:first-child{
+		margin-right: 0;
+	}
+	
+	.sticky-header-wrapper .header-container ul.nav > li:last-child > a{
+		padding-left: 0;
+	}
+	
+	.sticky-header-wrapper ul.canon_breadcrumbs > li,
+	.sticky-header-wrapper ul.social-link > li{
+		padding-right: 2px;
+		margin-right: 2px;
+	}
+		  	  
+	.sticky-header-wrapper ul.sub-menu {
+		left: 0;
+	}	  
+	
+	 ul.sub-menu li:last-child{
+	 	margin-right: 0;
+	 	padding: 0.25em;
+	 }	  
+		  
+		  
+	.sticky-header-wrapper  .countdown_amount{
+		padding-left: 5px;
+		padding-right: 2px;
+	}
+	.sticky-header-wrapper .countdown_section *,
+	.sticky-header-wrapper .countdown *{
+		float: right;
+	}
+	.sticky-header-wrapper .hasCountdown strong{
+		padding-right: 0px;
+		padding-left: 5px;
+	}  
+	
+	.post-header-container .centered .nav > li,
+	.post-header-container .centered .nav > li:last-child{
+		margin-right: 3.7em;
+		padding-right: 0;
+	}
+	
+	.sticky-header-wrapper .post-header-container .centered .nav .sub-menu{
+		right: -15px;
+	}
+	
+	
+	
+	
+	
+	/* Right Screen Compensation */
+	
+	.pre-header-container .right .nav ul.sub-menu,
+	.post-header-container .right .nav ul.sub-menu{
+		right: 10px;
+	}
+	
+	.pre-header-container .right ul.nav > li:last-child ul.sub-menu,
+	.post-header-container .right ul.nav > li:last-child ul.sub-menu{
+		right: 10px;
+	}
+	
+	.pre-header-container .right ul.nav > li:first-child ul.sub-menu,
+	.post-header-container .right ul.nav > li:first-child ul.sub-menu{
+		right: -15px;
+	}
+	
+	
+	.sticky-header-wrapper .centered .nav ul.sub-menu{
+		right: 0;
+		width: auto!important;
+	}
+	
+	.pre-header-container .centered .nav ul.sub-menu{
+		right: 10px;
+	}
+	
+	.pre-header-container .centered ul.nav > li:first-child ul.sub-menu{
+		right: -12px;
+	}
+	
+	.sticky-header-wrapper .centered .nav ul.sub-menu li{
+		text-align: right;
+	}
+	
+	.sticky-header-wrapper .centered .nav ul.sub-menu li a{
+		display: block;
+	}
+	
+	.sticky-header-wrapper .centered .nav ul.sub-menu li.after.fa:before  {
+		float: none !important;
+		margin-top: 0;
+		position: relative;
+		right: 0;
+		top: 0;
+		display: none!important;
+	}
+	
+	.sticky-header-wrapper .centered .nav ul.sub-menu li.after.fa{
+		padding-right: .25em;
+	}
+	
+	.sticky-header-wrapper .centered .nav ul.sub-menu ul.sub-menu{
+		left: -100%!important;
+		right: 100%!important;
+		z-index: 9999;
+		max-width: 100%;	
+	}
+	
+	.sticky-header-wrapper .centered .nav li ul:before{
+		left: inherit;
+		right: 15px!important;
+	}
+	
+	.sticky-header-wrapper .centered .nav li ul.sub-menu ul.sub-menu:before{
+		display: none;
+	}
+	
+	.sticky-header-wrapper .centered .nav li ul.sub-menu ul.sub-menu:after{
+		content:"";
+		width: 8px;
+		height: 8px;
+		display: block;
+		position: absolute;
+		left:-4px;
+		top:10px; /* you can adjust */
+		-moz-transform: rotate(45deg);
+		-webkit-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+		border: none;
+	}
+	
+	.sticky-header-wrapper .centered .nav li ul.sub-menu ul.sub-menu:after{
+		left: calc(100% - 5px);
+	}
+	
+	.sticky-header-wrapper  .centered .countdown_section *,
+	.sticky-header-wrapper  .centered .countdown *{
+		float: none;
+	}
+		  
+		   
+	   
+	   
+	   
+	   
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+	
+
+	
+	.is-dropcap .postText:first-letter,
+	.is-dropcap .postText .lead:first-letter,
+	.single-post .is-dropcap .postText > p:first-child:first-letter,
+	.is-dropcap .postText .classic-dropcap:first-letter{
+	    float: right;     
+	    margin-left: 3px;
+	    margin-right: 0;   
+	}
+	
+	.post-format-quote cite{
+		text-align: left;
+	}
+	
+	.post-format-quote cite a{
+		float: left;
+		padding-right: 20px;
+		padding-left: 0;
+	}	
+	
+	.postMeta .dateMeta > a{
+		margin-left: 10px;
+		margin-right: 0;
+	}
+	
+	.postMeta .dateMeta > a em{
+		padding-left: 3px;
+		padding-right: 0;
+	}
+	
+	
+	.postMeta .dateMeta > a:first-child{
+		margin-right: 0;
+		margin-left: 10px;
+	}
+	
+	ul.socialList > li:first-child{
+		padding-left: 0!important;
+		padding-right: 0!important;
+	}
+	
+	ul.socialList ul li:first-child{
+		padding-left: 4px!important;
+		padding-right: 4px;
+	}
+	
+	.postMeta ul.socialList ul{
+		padding: 6px;
+		padding-right: 10px;
+		left: inherit;
+		right: 0px;
+	}
+	
+	.postMeta ul.socialList ul:before{
+		right:-3px;
+		left: inherit;
+		-webkit-box-shadow: 2px -1px 2px 0 rgba(0,0,0,.07);
+		box-shadow: 2px -1px 2px 0 rgba(0,0,0,.07);
+	}
+	
+	.postMeta ul.socialList li:hover ul{
+		right: 25px;
+		left: inherit;
+	}
+	
+	@media only screen and (max-width: 1140px) {
+		.postMeta ul.socialList li:hover ul{
+			right: 0;
+		}
+	
+	}
+	
+	.postMeta ul.socialList li ul li{
+		display: inline-block;
+		float: right;
+	}
+	
+	.socialList > li > em{
+		padding-left: 20px;
+		padding-right: 0;
+	} 
+	
+	.meta-comments .fa,
+	.heart .fa,
+	.meta-views .fa{
+		padding-left: 3px;
+		padding-right: 0;
+	}	  
+	
+	.postTags ul li{
+		display: inline-block;
+		margin-left: 4px;
+		margin-right: 0;
+		margin-bottom: 2px;
+	}
+	
+	.postAuthor img:first-child, 
+	.postComment img:first-child{
+		float: right;
+		margin-left: 20px;
+		margin-right: 0;
+	}
+	
+	.more-posts-carousel .meta .fa{
+		padding-left: 4px;
+		padding-right: 0;
+	}
+	
+	ol, ul {
+	    padding: 0 20px 0 0;
+	}
+	
+	.top-post-meta .socialList{
+		float: left;
+		margin-top: 8px;
+	}
+	
+
+	.is-col-1-2.is-sidebar .main-column,
+	.is-col-1-3.is-sidebar .main-column,
+	.is-col-1-4.is-sidebar .main-column{
+		margin-right: 0;
+		margin-left: 0;
+	}
+	
+	.flexslider-quote blockquote, 
+	.flexslider blockquote{
+		text-align: right;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/* ==========================================================================
+   LISTS
+   ========================================================================== */
+	
+	   
+	ol{
+		padding-right: 8px;
+		margin-right:0; /* Remove the default left margin */
+		padding-left:0; /* Remove the default left padding */
+		margin-right: 18px;
+	}
+	
+	ol > li {
+		margin: 0 1em 0 0;
+		padding-left: 0px;
+		padding-right: 0;
+	}
+	
+	ol > li:before {
+	    left: inherit;
+	    right:-.75em;
+	    margin-left:8px;
+	    margin-right: 0;
+	}
+	
+	ol li:before{
+		margin-right: -12px;
+		margin-left: 0;
+	}	
+	
+	.main-column .postText ul li:before,
+	ul.comments li .clearfix ul li:before,
+	.icon-thirds li:after,
+	.flexslider li:after, 
+	.flexslider-quote li:after,
+	ul.tab-nav li:after,
+	ul.toggle li:after,
+	ul.sc_toggle li:after,
+	ul.accordion li:after,
+	ul.sc_accordion li:after,
+	.postText .tc-info-box ul.tc-info-box-ul li:after,
+	.postTags ul li:after,
+	.review-graph li:after,
+	.star-rating li:after,
+	.socialList li:after{
+		display: none;
+	}
+	
+	.main-column .postText ul li:after,
+	ul.comments li .clearfix ul li:after{
+		content: "";
+		font-family: "FontAwesome";
+		font-size: .65rem;
+		position: relative;
+		margin-right: -10px;
+		right: -5px;
+		top: -1px;
+	}
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+/* ==========================================================================
+   INFO BOX
+   ========================================================================== */	
+	
+	.tc-info-box-print{
+		float: left;
+		padding-right: 15px;
+		padding-left: 0;
+	}
+	
+	
+	.tc-info-box-meta p{
+		padding-left: 10px;
+		padding-right: 0;
+	}
+	
+	
+	.tc-info-box ul.tc-info-box-ul{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.tc-info-box ul.tc-info-box-ul li{
+		cursor: pointer;
+	}
+
+	.postText .tc-info-box ul.tc-info-box-ul li:before{
+		font-family: 'FontAwesome';
+		content: "";
+		width: 24px;
+		display: inline-block;
+		position: relative;
+		top: 1px;
+		font-size: 1rem;
+		left: 0;
+		margin-left: 0;
+		text-align: left;
+		padding-left: 10px;
+	}
+	
+	.postText .tc-info-box ul.tc-info-box-ul li.checked:before{
+		content: "";
+	}	
+	
+	.tc-info-box-ol{
+		margin-right: 0;	
+	}
+	
+	
+	
+	
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/* ==========================================================================
+  	REVIEW BOX
+   ========================================================================== */ 
+	
+	
+	
+	.boxy.review-box .rate-tab{
+		margin-right: 1em;
+		margin-left: 0;
+		float: left;
+	}
+	
+	
+	ul.graphs, ul.review-graph{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	ul.graphs > li, ul.review-graph > li{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	
+	ul.graphs > li span, ul.review-graph > li b{
+		float: left;
+	}
+	
+	
+	ol.sc_graphs, ol.sc_graphs li{
+		margin-left: 0!important;
+		margin-right: 0!important;
+		padding-left: 0!important;
+		padding-right: 0!important;
+	}
+	
+	ol.sc_graphs li div span{
+		float: left;
+	}
+	
+	.review-box .star-rating,
+	.review-box .star-rating-result{
+		float: right;
+	}
+	
+	.review-box .star-rating li {
+		float: right;
+		margin-right: 0px;
+		margin-left: 3px;
+	}
+	
+	
+	
+
+
+
+	
+	
+	
+	
+	
+	
+	
+/* ==========================================================================
+   Archive Layouts
+   ========================================================================== */	
+	
+	
+	.is-classic .inner-wrapper .featImage {
+		float: right;
+		padding: 0;
+	}
+	
+	
+	.is-classic .inner-wrapper .featImage + .postText,
+	.is-classic .inner-wrapper .featImage + .postText + .postMeta{
+		float: left;
+	}
+	
+	.is-classic .postTitle{
+		text-align: right;
+	}
+	
+	.category-description{
+		text-align: center;
+	}
+
+	.is-classic .post.format-quote .postTitle{
+		text-align: center;
+	}
+
+	
+	
+	/* ARCHIVE HEADER */
+	
+	.not-full.outter-wrapper.archive-header{
+		text-align: center;
+	}
+	
+	.post-component-container.post-component-ad{
+		text-align: center;
+	}
+
+	
+	
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+
+
+
+
+
+	
+/* ==========================================================================
+   TC Hover Image Effects
+   ========================================================================== */
+	   
+	
+	
+	.tc-effect-lift .tc-hover-content-container {
+		text-align: right;
+	}
+	
+
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+/* ==========================================================================
+   Hero Posts Grid
+   ========================================================================== */
+	
+	
+	.hero-grid .tc-hover-content-container,
+	.hero-grid .tc-hover:before{
+		width: calc(100% - 2px);
+		left: 0px;
+		right: 1px;
+		bottom: 0px;
+	}
+	
+	@media only screen and (min-width: 1140px) {
+	.boxed-page .hero-grid > .col-1-2:first-child .col-1-3 .tc-hover-container{
+		margin-left: 0;
+		margin-right: 0;	
+	}
+	
+	.boxed-page .hero-grid > .col-1-2:last-child .col-2-3 .tc-hover-container{
+		margin-right: 0;
+		margin-left: 0;	
+	}
+	}
+	
+	
+	
+	 
+	
+	@media only screen and (max-width: 768px) { 
+		
+		.hero-grid.grid-6tall .col-1-2 .col-1-2{
+			width: 100%;
+		}
+		
+		.hero-grid .col-2-3,
+		.hero-grid .col-1-3{
+			float: right;
+		}
+		
+		.hero-grid .col-1-2,
+		.hero-grid.grid-6tall .col-1-2{
+			width: 50%;
+			float: right;	
+		}
+	
+	}
+	
+
+
+	
+	.hero-grid ul li{
+		width: 16.6%;
+		float: right;	
+	}
+
+	.hero-grid ul li:nth-child(5){
+		right: 49.999%;
+	}
+	
+	
+	@media only screen and (max-width: 1140px) { 
+		.hero-grid ul li{
+			width: 33.333%!important;
+			position: relative!important;	
+			float: right!important;
+			margin-top: 0!important;
+			left: inherit!important;
+			right: 0!important;
+		}
+	}
+	
+	
+	
+	
+	.post-grid-excerpt{
+		text-align: center;
+		padding: 0px 20px!important;
+	}
+	
+	.post-grid-excerpt-right .comment-count{
+		right: inherit;
+		left: 0;
+	}
+	
+	.more-posts-carousel{
+		direction: ltr;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/* ==========================================================================
+   Hero Widgets
+   ========================================================================== */
+	
+	
+	.hero-widgets.element-block-widgets ul{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/* ==========================================================================
+   Hero Carousel
+   ========================================================================== */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/* ==========================================================================
+   Form Styles
+   ========================================================================== */
+	  
+	label{
+		padding-right: 0em;
+		padding-left: 1em;
+	}
+	
+	
+	textarea{
+		clear: right;
+	}
+	
+	select, input[type=radio], input[type=checkbox] {
+		margin-right: 0px;
+		margin-left: 6px;
+	}
+
+	
+	.comment-form input[type=text]:nth-child(-n+3){
+		margin-left: 2%;
+		margin-right: 0;
+		float: right;
+	}
+	
+	.comment-form input:nth-child(3){
+		margin-right: 0!important;
+		margin-left: 0!important;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/* ==========================================================================
+   Buttons
+   ========================================================================== */
+	   
+	.btn, input[type=button], input[type=submit], button, .read-more, .gallery-filter li a{
+		text-align: right;
+	}
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/* ==========================================================================
+   Comments
+   ========================================================================== */
+	
+	
+	ul.comments li div.left{
+		padding: 0;
+		padding-left: 1em;
+	}
+	
+	ul.comments ul li div{
+		padding-right: 4%;
+		padding-left: 0;
+	}
+	
+	ul.comments ul ul li div{
+		padding-right: 8%;
+		padding-left: 0;
+	}
+	
+	ul.comments ul ul ul li div{
+		padding-right: 12%;
+		padding-left: 0;
+	}
+	
+	ul.comments ul ul ul ul li div{
+		padding-right: 16%;
+		padding-left: 0;
+	}
+	
+	ul.comments ul ul ul ul ul li div{
+		padding-right: 20%;
+		padding-left: 0;
+	}
+	
+	ul.comments ul ul ul ul ul ul li div{
+		padding-right: 24%;
+		padding-left: 0;
+	}
+	
+	ul.comments ul ul ul ul ul ul ul li div{
+		padding-right: 28%;
+		padding-left: 0;
+	}
+	
+	ul.comments ul ul ul ul ul ul ul ul li div{
+		padding-right: 32%;
+		padding-left: 0;
+	}
+	
+	ul.comments ul ul ul ul ul ul ul ul ul li div{
+		padding-right: 36%;
+		padding-left: 0;
+	}
+	
+	ul.comments ul ul ul ul ul ul ul ul ul li div{
+		padding-right: 40%;
+		padding-left: 0;
+	}
+	
+	
+	
+	
+	
+	.comment-reply-link, 
+	.comment-edit-link, 
+	#cancel-comment-reply-link{
+		float: left;
+		padding-left: 0px;
+		padding-right: 20px;
+	}
+	
+	#cancel-comment-reply-link{
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	ul.comments li div.right{
+		float: left;
+	}
+	
+	.comment-reply-link:before, 
+	.comment-edit-link:before{
+		content: "";
+		font-size: .5rem;
+		padding-right: 3px;
+		font-family: "FontAwesome";
+		position: absolute;
+		right: 5px;
+		top: 2px;
+		opacity: 0;
+	} 
+	
+	
+	.comment-reply-link:hover:before, 
+	.comment-edit-link:hover:before{
+		opacity: 1;
+		right: 0px;
+	}
+
+	ul.comments h6.meta span{
+		display: inline-block;
+	}
+	
+
+	
+	ul.comments .avatar{
+		float: right;
+		margin-right: 0;
+		margin-left: 20px;	
+	}
+	
+	
+	
+	
+	
+
+
+
+
+
+	
+	
+	
+/* ==========================================================================
+   Columns
+   ========================================================================== */
+   
+	
+	.half, 
+	.col-1-2, 
+	.is-col-1-2 .wrapper{
+		width: 48%;
+		margin-left: 4%;
+		margin-right: 0;
+		float: right;
+	}
+	
+	.third, 
+	.col-1-3, 
+	.is-col-1-3 .wrapper{
+		width: 30%;
+		margin-left: 5%;
+		margin-right: 0;
+		float: right;
+	}
+	
+	.fourth, 
+	.col-1-4, 
+	.is-col-1-4 .wrapper{
+		width: 22%;
+		margin-left: 4%;
+		margin-right: 0;
+		float: right;
+	}
+	
+	.fifth, 
+	.col-1-5, 
+	.is-col-1-5 .wrapper{
+		width: 18%;
+		margin-left: 2.5%;
+		margin-right: 0;
+		float: right;
+	}
+	
+	.two-thirds, 
+	.col-2-3{
+		width: 65%;
+		margin-left: 5%;
+		margin-right: 0;
+		float: right;
+	}
+	
+	.three-fourths, 
+	.col-3-4{
+		width: 74%;
+		margin-left: 4%;
+		margin-right: 0;
+		float: right;
+	}
+	
+	.two-fifths, 
+	.col-2-5{
+		width: 36%;
+		margin-left: 3%;
+		margin-right: 0;
+		float: right;
+	}
+	
+	.three-fifths, 
+	.col-3-5{
+		width: 61%;
+		margin-left: 2%;
+		margin-right: 0;
+		float: right;
+	}
+	
+	.four-fifths, 
+	.col-4-5{
+		width: 78%;
+		margin-left: 4%;
+		margin-right: 0;
+		float: right;
+	}
+	
+	
+	
+	
+	/* Col Fixes */
+	.is-col-1-2 .wrapper:nth-child(2n+2),
+	.is-col-1-3 .wrapper:nth-child(3n+3),
+	.is-col-1-4 .wrapper:nth-child(4n+4),
+	.is-col-1-5 .wrapper:nth-child(5n+5){
+		margin-right: 0;
+		margin-left: 0;
+	}
+	
+	.is-col-1-3 .wrapper:nth-child(3n+4),
+	.is-col-1-4 .wrapper:nth-child(4n+5),
+	.is-col-1-5 .wrapper:nth-child(5n+6){
+		clear: right;
+	}
+	
+	
+	
+
+
+
+	
+	
+	
+	
+
+
+
+
+	
+/* ==========================================================================
+	Isotope Column Adjustments
+   ========================================================================== */
+	
+	
+	.gallery-filter{
+		list-style-type: none;
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.gallery-filter li{
+		margin-left: 0px;
+		margin-right: 4px;
+	}
+	
+	.gallery-head .left{
+		float: right;
+	}
+	
+	.gallery-head .right{
+		float: left;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/* ==========================================================================
+   Sidebar Widgets
+   ========================================================================== */
+	  
+	   
+	.sidebar ul{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.widget_archive li a,
+	.widget_categories li a{
+		padding-right: 0em;
+		padding-left: .5em;
+		display: inline-block;
+	}
+	
+	.belle_more_posts ul li:before,
+	.belle_quicklinks ul li:before,
+	.widget_text ul li:before,
+	.widget .more-posts-thumbnails-list li:after{
+		display: none;
+	}
+	
+	.belle_more_posts ul li:after,
+	.belle_quicklinks ul li:after,
+	.widget_text ul li:after{
+		content: "";
+		padding-left: 5px;
+		font-size: .82rem;
+		font-family: "FontAwesome";
+	}
+	
+	.belle_paired_list li span{
+		float: left;
+	}
+	
+	.belle_statistics li em{
+		padding-right: 0px;
+		padding-left: 10px;	
+	}
+	
+	.belle_statistics li span{
+		display: inline-block;
+	}
+	
+	ul li.recentcomments:before{
+		display: none;
+	}
+
+	ul li.recentcomments:after{
+		content: "";
+		font-family: "FontAwesome";
+		font-size: .82rem;	
+		padding-left: 10px;
+	}
+	
+
+
+	
+	.widget_rss ul li{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+
+	   
+	   
+	
+	
+	/* MORE POSTS WIDGET */
+	.widget .more-posts-thumbnails-list .thumbnails-list-img {
+	    float: right;
+	    right: 0;
+	    margin-left: 12px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/* ==========================================================================
+   Pagination
+   ========================================================================== */
+	
+	.pagination{
+		text-align: right;
+		direction: ltr;
+	}
+	.pagination > div{
+		float: none;
+		display: inline-block;
+	}
+	
+	.pagination ul{
+		text-align: right;
+	}
+	
+	.archive-pagination-prevnext  ul li:first-child,
+	.archive-pagination-prevnext-ajax  ul li:first-child{
+		border-right-style: solid;
+		border-right-width: 1px;
+		box-sizing: border-box;
+		margin-right: 0;
+		padding-left: 0;
+		padding-right: 0.25em;
+		position: relative;	
+	}
+
+	
+	
+
+	
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	
+/* ==========================================================================
+   Paging
+   ========================================================================== */
+
+	
+	.paging{
+		text-align: right;
+		direction: ltr;
+	}
+	.paging > div{
+		float: none;
+		display: inline-block;
+	}
+	
+	.paging .prev{
+		border-right-style: solid;
+		border-right-width: 1px;
+		-webkit-box-sizing: border-box; 
+		-moz-box-sizing: border-box; 
+		box-sizing: border-box;
+		padding-left: 0;
+		position: relative;
+		padding-right: .5em;
+		margin-right: 0;
+	}
+	
+	.paging .next{
+		-webkit-box-sizing: border-box; 
+		-moz-box-sizing: border-box; 
+		box-sizing: border-box;
+		padding-right: 0;
+		position: relative;
+		padding-left: .5em;
+	}
+	
+	.paging .prev .meta:before{
+		content: "";	
+		font-family: "FontAwesome";
+		padding-right: 1em;
+	}
+	
+	.paging .next .meta:after{
+		content: "";
+		font-family: "FontAwesome";
+		padding-left: 1em;	
+	}
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+	   
+
+	.post-footer-container ul li a,
+	.pre-footer-container ul li a{
+		padding-right: 0em;
+		padding-left: .5em;
+		margin-right: 0em;
+		margin-left: .5em;
+	}
+	
+	
+	.post-footer-container .nav li,
+	.pre-footer-container .nav li{
+		margin-right: 1.5em;
+		margin-left: 1.5em;
+		padding: 0 0 0 1.5em;
+	}
+	
+	.post-footer-container .nav ul.sub-menu,
+	.pre-footer-container .nav ul.sub-menu{
+		margin-left: 0em;
+		margin-right: 1.5em;
+		padding-left: 0;
+		padding-right: 1.5em;
+	}
+	
+	.post-footer-container .centered ul.nav li ul li,
+	.pre-footer-container .centered ul.nav li ul li{
+		text-align: right;
+	}
+
+	#scrollUp {
+	  right: inherit;
+	  left: 20px;
+	}
+	
+	.post-footer-container ul, .pre-footer-container ul{
+		padding-right: 0;
+	}
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+/* ==========================================================================
+   404 page + Messages
+   ========================================================================== */
+	
+
+	.maintenance_msg h1:before, .error404 .main-column .super:after{
+		content: "";
+		font-family: "FontAwesome";
+		display: inline-block;
+		font-size: 4.2rem;
+		margin-bottom: 1em;
+	}
+	
+	.error404 .main-column .super:after{
+		padding-left: 0px;
+		padding-right: 15px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	
+	
+/* ==========================================================================
+   Featured Carousel
+   ========================================================================== */
+	 
+	.element-block-carousel,
+	.element-block-instagram-carousel {
+		direction: ltr;
+	}
+	
+	.owl-item{
+		direction: rtl;
+	}
+	
+	.hero-carousel .tc-hover-content h3 .user-meta:before{
+		display: none;
+	}
+	
+	.hero-carousel .tc-hover-content h3 .user-meta:after{
+		content: "";
+		font-family: "FontAwesome";
+		font-size: .7rem;
+		padding-left: 5px;
+		position: relative;
+		top: -1px;	
+		opacity: .5;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/* ==========================================================================
+   Search Header
+   ========================================================================== */
+	   
+	
+	
+	.search-header-container header form input{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	
+	.search_controls li {
+		padding: 3px 15px 3px 0;
+	}
+	
+	.search_controls li.search_control_search{
+		left: 75px;
+		right: inherit;
+	}
+	
+	.search_controls li.search_control_close{
+		margin-right: 0;
+		margin-left: 0;
+		top: 0;
+		right: inherit;
+		left: 0;
+	}
+	
+	.ui-autocomplete {
+		left: inherit!important;
+		right: 0!important;
+		padding-left: 80px;
+		padding-right: 90px;
+	}
+	
+	.ui-autocomplete li {
+		margin-left: 10px;
+		margin-right: 0;
+	}
+		
+	.hero-search-form .btn{
+		right: inherit;
+		left: 12px;
+	}
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/* ==========================================================================
+   Shortcode Styles
+   ========================================================================== */
+	   
+	
+	table{
+		text-align: right;
+	}
+	
+
+
+	
+	
+	/* =======  ACCORDION =========== */
+
+	ul.toggle li a.toggle-btn:before,
+	ul.sc_toggle li a.sc_toggle-btn:before,
+	ul.accordion li a.accordion-btn:before,
+	ul.sc_accordion li a.sc_accordion-btn:before {
+		content: "";
+		font-family: "FontAwesome"!important;
+		padding-left: .35em;
+		font-size: .7rem;
+		display: inline-block;
+	}
+
+	
+	
+	
+	/* =======  Graphs  =========== */
+	
+	@keyframes animatedBackground {
+		from { background-position: 0 0; }
+		to { background-position: 100% 0; }
+	}
+	
+	ol.graphs > li div,
+	.ratings-bar{
+		background: url('../img/stripe.png') repeat;
+		background-size: 64px 64px;
+		background-position: 0 0;
+		background-repeat: repeat-x;
+		animation: animatedBackground 40s linear infinite;
+		-webkit-box-sizing: border-box; 
+		-moz-box-sizing: border-box; 
+		box-sizing: border-box;
+	}  
+	
+	ol.graphs{
+		padding-right: 0;
+	}
+	
+	ol.graphs > li{
+		margin-right: 0;
+	}  
+	
+	ol.graphs > li span{
+		float: left;
+	}
+	
+	
+	
+	/* TABS */
+	ul.tab-nav li{
+		float: right;
+	}
+	
+	
+	
+	
+	
+/* ==========================================================================
+   Alternate Post Styles
+========================================================================== */
+	
+	.single-item.alt-post-style-5 .read-more{
+		float: right;
+	}
+	
+	.single-item.alt-post-style-5 .socialList{
+		float: left;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/* ==========================================================================
+   SOCIAL LINKS
+   ========================================================================== */
+	
+
+	 
+	.socialList li:first-child{
+		padding-left: 0;
+		padding-right: 0;
+	}   
+	
+	.socialList li:last-child{
+		padding-right: 0;
+		padding-left: 0;
+	} 
+	
+	   
+	.outter-wrapper .wrapper ul.social-links li{
+		margin-right: 0;
+		margin-left: 0;
+		padding-right: 0px;
+		padding-left: 2px;
+	}
+	
+	.social-links li{
+		padding-right: 0px;
+		padding-left: 2px;
+	}
+	
+	.social-links li:last-child{
+		padding-right: 0;
+		padding-left: 0;
+	}
+	
+	.widget.belle_social_links .social-links-container {
+		text-align: right;	
+	}
+	
+	.widget.belle_social_links ul.social-links{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.widget.belle_social_links ul.social-links li {
+		padding-left:0px;
+		padding-right: 5px;
+	}
+	
+	.widget.belle_social_links ul.social-links:not(.standard) li {
+		padding-right: 0px;
+		padding-left: 3px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+	
+/* ==========================================================================
+   WordPress Specifics
+   ========================================================================== */
+	
+	.sticky.post:after {
+		left: 0%;
+		right: inherit;
+		text-align: center;
+		-webkit-border-radius: 0 0 90px 0;
+		border-radius: 0 0 90px 0;
+	}
+	
+	
+	
+	
+	
+	
+	   
+	   
+	  
+	  
+	  
+	  
+	   
+	
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */	
+	
+	
+	.icon-thirds{
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+	.icon-thirds li{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		
+
+
+
+/* ==========================================================================
+   24. Flags
+   ========================================================================== */
+
+/* CHECK */   
+ a.flag{
+	padding-left: 0px!important;
+	padding-right: 25px!important;
+	background-position: 0 8px;
+}
+/* CHECK */ 
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+	
+	.last{ margin-left: 0!important; padding-left: 0!important;  }
+	
+	.first{ margin-right: 0; padding-right: 0!important;}
+	
+
+
+
+	
+	
+	
+	
+/* ==========================================================================
+   WooCommerce Helpers
+   ========================================================================== */
+	
+	.woocommerce ul.cart_list li img, .woocommerce ul.product_list_widget li img, .woocommerce-page ul.cart_list li img, .woocommerce-page ul.product_list_widget li img,
+	
+	.woocommerce-message .button, .woocommerce-error .button, .woocommerce-info .button{
+		float: left;
+	}
+	
+	.woocommerce p.stars span, .woocommerce-page p.stars span,
+	
+	.woocommerce div.product form.cart div.quantity, .woocommerce #content div.product form.cart div.quantity, .woocommerce-page div.product form.cart div.quantity, .woocommerce-page #content div.product form.cart div.quantity,
+	
+	.woocommerce div.product form.cart .button, .woocommerce #content div.product form.cart .button, .woocommerce-page div.product form.cart .button, .woocommerce-page #content div.product form.cart .button{
+		float: right;
+	}
+	
+	.woocommerce div.product form.cart div.quantity, .woocommerce #content div.product form.cart div.quantity, .woocommerce-page div.product form.cart div.quantity, .woocommerce-page #content div.product form.cart div.quantity{
+		margin-right: 0;
+		margin-left: .5em;
+	}
+	
+	.reviews_tab a{
+		direction: ltr;
+	}
+	
+	.widget.woocommerce ul.product-categories li:before {
+	    display: none;
+	}
+	
+	.widget.woocommerce ul.product-categories li:after {
+	    content: "";
+	    font-family: "FontAwesome" !important;
+	    font-style: normal;
+	    padding-left: 5px;
+	}
+
+	.woocommerce-message .button, .woocommerce-error .button, .woocommerce-info .button{
+		font-size: 75%;
+	}
+	
+	.woocommerce table.shop_table, .woocommerce-page table.shop_table{
+		text-align: right;
+	}
+	

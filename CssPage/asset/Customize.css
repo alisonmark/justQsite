@@ -1,0 +1,112 @@
+:root {
+    --n: 5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #000;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #222 linear-gradient(currentColor, currentColor) 50%/2px repeat-y;
+    color: #ddd;
+}
+
+div {
+    --s: -1;
+    display: flex;
+    align-items: center;
+    height: calc(100vh/var(--n));
+    transform: translate(calc(var(--s)*50%));
+}
+
+div:nth-child(2n+1) {
+    --s: 1;
+}
+
+div:nth-child(2n) img {
+    --cpval: polygon(90.45085% 79.38926%, 34.54915% 97.55283%, 0% 50%, 34.54915% 2.44717%, 90.45085% 20.61074%);
+    -webkit-clip-path: var(--cpval);
+    clip-path: var(--cpval);
+}
+
+div:nth-child(2n) img:hover {
+    --cpval: polygon(90.45085% 20.61074%, 90.45085% 79.38926%, 34.54915% 97.55283%, 0% 50%, 34.54915% 2.44717%);
+    -webkit-clip-path: var(--cpval);
+    clip-path: var(--cpval);
+}
+
+
+/*article {
+  --s: -1;
+  display: flex;
+  align-items: center;
+  height: calc(100vh/var(--n));
+  transform: translate(calc(var(--s)*50%));
+}*/
+
+
+/*article:nth-child(2n) {
+  --s: 1;
+}*/
+
+
+/*article:nth-child(2n) img {
+  --cpval: polygon(90.45085% 79.38926%, 34.54915% 97.55283%, 0% 50%, 34.54915% 2.44717%, 90.45085% 20.61074%);
+  -webkit-clip-path: var(--cpval);
+  clip-path: var(--cpval);
+}*/
+
+
+/*article:nth-child(2n) img:hover {
+  --cpval: polygon(90.45085% 20.61074%, 90.45085% 79.38926%, 34.54915% 97.55283%, 0% 50%, 34.54915% 2.44717%);
+  -webkit-clip-path: var(--cpval);
+  clip-path: var(--cpval);
+}*/
+
+h3 {
+    order: var(--s);
+    font: 700 2em segoe script, cursive;
+    text-transform: capitalize;
+}
+
+figure,
+img {
+    height: 100%;
+}
+
+figure {
+    background: linear-gradient(currentColor, currentColor) calc((1 - var(--s))*50%) 50%/50% 2px no-repeat;
+    filter: drop-shadow(2px 2px 3px currentcolor);
+}
+
+img {
+    display: block;
+    margin: 0 1em;
+    --cpval: polygon(100% 50%, 65.45085% 97.55283%, 9.54915% 79.38926%, 9.54915% 20.61074%, 65.45085% 2.44717%);
+    -webkit-clip-path: var(--cpval);
+    clip-path: var(--cpval);
+    transition: .7s;
+}
+
+img:hover {
+    --cpval: polygon(65.45085% 97.55283%, 9.54915% 79.38926%, 9.54915% 20.61074%, 65.45085% 2.44717%, 100% 50%);
+    -webkit-clip-path: var(--cpval);
+    clip-path: var(--cpval);
+}
+
+
+/*img:active h3 {
+  color: red;
+}*/
+
+p {
+    color: red;
+}

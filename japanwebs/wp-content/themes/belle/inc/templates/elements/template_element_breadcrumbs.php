@@ -1,0 +1,1 @@
+<?php echo canon_fw_get_breadcrumbs(); ?>

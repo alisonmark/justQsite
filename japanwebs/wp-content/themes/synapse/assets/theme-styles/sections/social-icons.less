@@ -1,0 +1,126 @@
+#bar {
+  .social-icons {
+    display: inline-block;
+    float: right;
+    background: @accent;
+    a {
+      padding: 19px 10px;
+      display: inline-block;
+      font-size: 22px;
+      @media screen and (max-width: 767px){
+        padding: 22px 6px;
+        font-size: 18px;
+        float: none;
+      }
+      color: @onaccent;
+      i {
+        z-index: 99;
+      }
+      &:first-child {
+        margin-left: 14px;
+      }
+      &:last-child {
+        margin-right: 14px;
+      }
+    }
+    a.hvr-bounce-to-bottom {
+      &:before {
+        background: @s-accent;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      width: 100%;
+      text-align: center;
+    }
+    .style2 {
+      &:hover {
+        -webkit-animation-name: spin;
+        -webkit-animation-duration: 400ms;
+        //-webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -o-transition: rotate(360deg);
+      }
+    }
+
+    .style3 {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      &:before {
+        content: '';
+        height: 48px;
+        width: 48px;
+        @media screen and (max-width: 767px) {
+          height: 34px;
+          width: 34px;
+        }
+        position: absolute;
+        background: transparent;
+        border: solid 2px @onaccent;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        -webkit-transform: scale(0, 0);
+        transition: transform .3s ease, opacity 1s ease;
+        opacity: 1;
+      }
+      &:hover {
+        &:before {
+          z-index: -1;
+          background: @t-accent;
+          border: solid 2px lighten(@t-accent, 20%);
+          border-radius: 50%;
+          transform: scale(1.5, 1.5);
+          opacity: 0;
+          a i {
+            z-index: 9999;
+            color: @onaccent;
+          }
+        }
+      }
+    }
+    .style4 {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      &:before {
+        content: '';
+        height: 48px;
+        width: 48px;
+        @media screen and (max-width: 767px) {
+          height: 34px;
+          width: 34px;
+        }
+        position: absolute;
+        background: transparent;
+        //border: solid 2px @onaccent;
+        // border-radius: 50%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        transition: transform .3s ease, opacity 1s ease;
+      }
+      &:hover {
+        &:before {
+          transform: scale(1.5, 1.5);
+          opacity: 0;
+          border: solid 2px @onaccent;
+          border-radius: 50%;
+
+          -webkit-animation-name: spin;
+          -webkit-animation-duration: 400ms;
+          //-webkit-animation-iteration-count: infinite;
+          -webkit-animation-timing-function: linear;
+          -o-transition: rotate(360deg);
+
+        }
+      }
+
+    }
+  }
+}
